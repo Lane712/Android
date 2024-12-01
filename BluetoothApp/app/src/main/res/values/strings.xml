@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BluetoothApp</string>
+    <string name="discovery_devices">发现设备</string>
+    <string name="paired_devices">已配对设备</string>
 </resources>

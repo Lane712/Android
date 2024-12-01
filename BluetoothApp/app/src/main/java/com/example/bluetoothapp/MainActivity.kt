@@ -63,8 +63,6 @@ class MainActivity : ComponentActivity() {
 
     val viewModel: BluetoothViewModel by viewModels()
 
-    var isGetPermissions = false
-
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -107,7 +105,8 @@ class MainActivity : ComponentActivity() {
                 viewModel.add(
                     Device(
                         name = device.name,
-                        address = device.address // MAC address
+                        address = device.address,// MAC address
+                        connected = true
                     )
                 )
             }
